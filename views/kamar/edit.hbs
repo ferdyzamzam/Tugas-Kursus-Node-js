@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <h3>Ubah Informasi Kamar</h3>
+                <hr>
+                <form action="/admin/kamar/{{ infokamar.id }}/update" method="post">
+                    <div class="form-group">
+                        <label for="inputno">Nomor Kamar</label>
+                        <input type="text" name="no" value="{{ infokamar.no }}" placeholder="Masukkan nomor kamar"
+                            id="inputno" class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputjumlah">Jumlah Tempat Tidur</label>
+                        <input type="text" name="jumlah" value="{{ infokamar.jumlah }}"
+                            placeholder="Masukkan jumlah kasur" id="inputjumlah" class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputfasilitas">Fasilitas Kamar</label>
+                        <input type="text" name="fasilitas" value="{{ infokamar.fasilitas }}"
+                            placeholder="Masukkan fasilitas" id="inputfasilitas" class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputharga">Harga/hari</label>
+                        <input type="text" name="harga" value="{{ infokamar.harga }}" placeholder="Masukkan harga"
+                            id="inputharga" class="form-control col-12">
+                    </div>
+                    <a href="/admin/kamar" class="btn btn-warning">Kembali</a>
+                    <button type="submit" style="float: right" class="btn btn-primary">Ubah</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

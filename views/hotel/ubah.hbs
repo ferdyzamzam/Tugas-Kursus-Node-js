@@ -1,0 +1,29 @@
+<div class="row justify-content-center">
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <h3>Ubah Informasi Hotel</h3>
+                <hr>
+                <form action="/admin/hotel/{{ infohotel.id }}/update" method="post">
+                    <div class="form-group">
+                        <label for="inputnama">Nama Hotel</label>
+                        <input type="text" name="nama" value="{{ infohotel.nama }}" placeholder="Masukkan nama hotel"
+                            id="inputnama" class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputalamat">Alamat Hotel</label>
+                        <input type="text" name="alamat" value="{{ infohotel.alamat }}" placeholder="Masukkan alamat"
+                            id="inputalamat" class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputlokasi">Lokasi Hotel</label>
+                        <input type="text" name="lokasi" value="{{ infohotel.lokasi }}" placeholder="Masukkan lokasi"
+                            id="inputharga" class="form-control col-12">
+                    </div>
+                    <a href="/admin/kamar" class="btn btn-warning">Kembali</a>
+                    <button type="submit" style="float: right" class="btn btn-primary">Ubah</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

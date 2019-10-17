@@ -1,0 +1,29 @@
+<div class="row justify-content-center">
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <h3>Tambah Informasi Hotel</h3>
+                <hr>
+                <form action="/admin/hotel/tambah" method="post">
+                    <div class="form-group">
+                        <label for="inputnama">Nama Hotel</label>
+                        <input type="text" name="nama" placeholder="Masukkan nama hotel" id="inputnama"
+                            class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputalamat">Alamat Hotel</label>
+                        <input type="text" name="alamat" placeholder="Masukkan alamat" id="inputalamat"
+                            class="form-control col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputlokasi">Lokasi Hotel</label>
+                        <input type="text" name="lokasi" placeholder="Masukkan lokasi" id="inputlokasi"
+                            class="form-control col-12">
+                    </div>
+                    <a href="/admin/hotel" class="btn btn-warning">Kembali</a>
+                    <button type="submit" style="float: right" class="btn btn-primary">Tambahkan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
